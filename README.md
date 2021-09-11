@@ -2,7 +2,8 @@
 
 Esse projeto consiste em exibir uma Dashboard de vendas a partir de dados fornecidos pelo backend.
 
-![Layout Lamp On](./.github/DSVendas.png)
+![Desktop](./.github/desktop.gif)
+![Mobile](./.github/mobile.gif)
 
 ---
 
@@ -38,7 +39,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
 ### Frontend
 
-[Layout](https://sds4-dsvendas-ana.netlify.app/)
+![Layout Home](./.github/dsvendas-home.png)
+![Layout Dashboard](./.github/dsvendas-dashboard.png)
 
 ### Backend
 
