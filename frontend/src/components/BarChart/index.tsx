@@ -17,7 +17,7 @@ type ChartData = {
   series: SeriesData[];
 };
 
-function BarChart() {
+const BarChart = () => {
   const [chartData, setChartData] = useState<ChartData>({
     labels: {
       categories: []
