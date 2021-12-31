@@ -1,13 +1,11 @@
 import moment from "moment";
-/* import { Game } from "../types/game";
+import { Game } from "../types/game";
 import { RecordItem } from "../types/record";
- */
 
 export const formatDate = (date: string) => {
   return moment(date).format("DD/MM/YYYY HH:mm");
 };
 
-/* 
 export const buildBarSeries = (games: Game[], records: RecordItem[]) => {
   const mappedGames = games.map((game) => {
     const filteredGames = records.filter((item) => {
@@ -26,7 +24,7 @@ export const buildBarSeries = (games: Game[], records: RecordItem[]) => {
     return b.y - a.y;
   });
 
-  return sortedGames.slice(0, 8);
+  return sortedGames.slice(0, 10);
 };
 
 export const getPlatformChartData = (records: RecordItem[]) => {
@@ -65,4 +63,3 @@ export const getGenderChartData = (records: RecordItem[]) => {
     series,
   };
 };
- */
