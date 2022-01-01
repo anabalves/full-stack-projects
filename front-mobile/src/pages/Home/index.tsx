@@ -1,15 +1,20 @@
 import React from "react";
-import { Text, View, StyleSheet, Image, Alert } from "react-native";
+import { Text, View, StyleSheet, Image } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
 import { FontAwesome5 as Icon } from "@expo/vector-icons";
+import Header from "../../components/Header";
+import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
+  const navigation = useNavigation();
+
   const handleOnPress = () => {
-    Alert.alert("Você clicou no botão!");
+    navigation.navigate('CreateRecord');
   };
 
   return (
     <>
+      <Header />
       <View style={styles.container}>
         <Image
           style={styles.gamerImage}
@@ -30,7 +35,7 @@ const Home = () => {
       </View>
     </>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
