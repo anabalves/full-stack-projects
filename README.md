@@ -2,13 +2,12 @@
 
 Big Game Survey é uma aplicação construída durante a 1ª edição da Semana Spring React organizada pela DevSuperior.
 
-A aplicação é baseada em pesquisa de preferência de jogos, os dados são coletados via app mobile e depois listados na aplicação web, que possui uma dashboard com gráficos baseados nesses dados.
+A aplicação consiste em uma pesquisa de preferência de jogos, os dados são coletados via app mobile e depois listados na aplicação web, que possui uma dashboard com gráficos baseados nesses dados.
 
 <p align="center">
   <img alt="Demonstração web" src="./.github/web.gif">
   <img alt="Demonstração mobile" src="./.github/mobile.gif">
 </p>
----
 
 ## 🚀 Tecnologias e Ferramentas
 
