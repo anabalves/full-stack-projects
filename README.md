@@ -1,4 +1,4 @@
-# SDS4 - DSVendas
+# SDS3 - DSVendas
 
 Esse projeto consiste em exibir uma Dashboard de vendas a partir de dados fornecidos pelo backend.
 
@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 ---
 
 ### Modelo Conceitual
-![Modelo Conceitual](./.github/sds4-mc.png)
+![Modelo Conceitual](./.github/sds3-mc.png)
 
 ### Padrão camadas adotado
 ![Modelo Conceitual](./.github/camadas.png)
@@ -44,9 +44,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
 ### Backend
 
-[All sellers](https://sds4-ana.herokuapp.com/sellers)
+[All sellers](https://sds3-anabalves.herokuapp.com/sellers)
 
-[Sales pagination](https://sds4-ana.herokuapp.com/sales?page=0&size=20&sort=date,desc)
+[Sales pagination](https://sds3-anabalves.herokuapp.com/sales?page=0&size=20&sort=date,desc)
 ``` 
  Parâmetros:
 
@@ -65,9 +65,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
  ```
 
 
-[Amount by seller](https://sds4-ana.herokuapp.com/sales/amount-by-seller)
+[Amount by seller](https://sds3-anabalves.herokuapp.com/sales/amount-by-seller)
 
-[Success by seller](https://sds4-ana.herokuapp.com/sales/success-by-seller)
+[Success by seller](https://sds3-anabalves.herokuapp.com/sales/success-by-seller)
 
 > A extensão [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related?hl=pt-BR) proporciona uma experiência mais agradável para visualizar os dados
 
