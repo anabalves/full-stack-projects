@@ -2,23 +2,28 @@ package com.devsuperior.dsdelivery.dto;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import com.devsuperior.dsdelivery.entities.Order;
 import com.devsuperior.dsdelivery.entities.enums.OrderStatus;
 
 public class OrderDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private Long id;
 	private String address;
 	private Double latitude;
 	private Double longitude;
 	private Instant moment;
 	private OrderStatus status;
-	
+
+	private List<ProductDTO> products = new ArrayList<>();
+
 	public OrderDTO() {
 	}
-	
+
 	public OrderDTO(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status) {
 		super();
 		this.id = id;
@@ -37,6 +42,7 @@ public class OrderDTO implements Serializable {
 		longitude = entity.getLongitude();
 		moment = entity.getMoment();
 		status = entity.getStatus();
+		products = entity.getProducts().stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
 	}
 
 	public Long getId() {
@@ -85,6 +91,10 @@ public class OrderDTO implements Serializable {
 
 	public void setStatus(OrderStatus status) {
 		this.status = status;
+	}
+
+	public List<ProductDTO> getProducts() {
+		return products;
 	}
 
 }
