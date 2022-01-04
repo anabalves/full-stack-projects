@@ -1,7 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL =
-  process.env.REACT_APP_BACKEND_URL ?? "http://192.168.15.4:8080";
+export const BASE_URL = "https://sds2-anabalves.herokuapp.com";
 
 export function fetchOrders() {
   return axios(`${BASE_URL}/orders`);

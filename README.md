@@ -6,7 +6,7 @@ A aplicação consiste em um delivery de comida, os pedidos são realizados na a
 
 <p align="center">
   <img alt="Demonstração web" src="./.github/web.gif">
-  <!-- <img alt="Demonstração mobile" src="./.github/mobile.gif"> -->
+  <img alt="Demonstração mobile" src="./.github/mobile.gif">
 </p>
 
 ---
