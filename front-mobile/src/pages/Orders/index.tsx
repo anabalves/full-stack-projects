@@ -1,12 +1,29 @@
 import React from "react";
-import { Text } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
 import Header from "../../components/Header";
+import OrderCard from "../../components/OrderCard";
 
 export default function Orders() {
   return (
     <>
       <Header />
-      <Text>Orders</Text>
+      <ScrollView style={styles.container}>
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+        <OrderCard />
+      </ScrollView>
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    paddingRight: "5%",
+    paddingLeft: "5%",
+  },
+});
