@@ -1,8 +1,6 @@
-import './App.css';
-
 function App() {
   return (
-    <h1>DSMovie</h1>
+    <h1>Página Principal</h1>
   );
 }
 
