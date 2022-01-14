@@ -4,6 +4,10 @@ DSMovie é uma aplicação construída durante a 6ª edição da Semana Spring R
 
 A aplicação consiste em um catalogo com avaliação de filmes/séries.
 
+<p align="center">
+  <img alt="Demonstração web" src="./.github/web.gif">
+</p>
+
 ---
 
 ## 🚀 Tecnologias e Ferramentas
