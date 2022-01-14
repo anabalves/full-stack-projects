@@ -1,8 +1,9 @@
-import axios from "axios";
+import axios, { AxiosRequestConfig } from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Movie } from "../../types/movie";
+import { validateEmail } from "../../utils/helpers";
 import { BASE_URL } from "../../utils/request";
 import "./styles.css";
 
@@ -11,6 +12,8 @@ type Props = {
 };
 
 function FormCard({ movieId }: Props) {
+  const navigate = useNavigate();
+
   const [movie, setMovie] = useState<Movie>();
 
   useEffect(() => {
@@ -24,8 +27,35 @@ function FormCard({ movieId }: Props) {
       });
   }, [movieId]);
 
-  const handleSubmit = () => {
-    toast.success("Avaliação realizada com sucesso!");
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const email = (event.target as any).email.value;
+    const score = (event.target as any).score.value;
+
+    if (!validateEmail(email)) {
+      return toast.error("Email inválido");
+    }
+
+    const config: AxiosRequestConfig = {
+      baseURL: BASE_URL,
+      method: "PUT",
+      url: "/scores",
+      data: {
+        email: email,
+        movieId: movieId,
+        score: score,
+      },
+    };
+
+    axios(config)
+      .then((response) => {
+        toast.success("Avaliação realizada com sucesso!");
+        navigate("/");
+      })
+      .catch(() => {
+        toast.error("Erro ao submeter avaliação");
+      });
   };
 
   return (
@@ -37,7 +67,7 @@ function FormCard({ movieId }: Props) {
       />
       <div className="dsmovie-card-bottom-container">
         <h3>{movie?.title}</h3>
-        <form className="dsmovie-form">
+        <form className="dsmovie-form" onSubmit={handleSubmit}>
           <div className="form-group dsmovie-form-group">
             <label htmlFor="email">Informe seu email</label>
             <input type="email" className="form-control" id="email" />
@@ -53,15 +83,9 @@ function FormCard({ movieId }: Props) {
             </select>
           </div>
           <div className="dsmovie-form-btn-container">
-            <Link to="/">
-              <button
-                type="submit"
-                className="btn btn-primary dsmovie-btn"
-                onClick={handleSubmit}
-              >
-                Salvar
-              </button>
-            </Link>
+            <button type="submit" className="btn btn-primary dsmovie-btn">
+              Salvar
+            </button>
           </div>
         </form>
         <Link to="/">
