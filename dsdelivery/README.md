@@ -1,6 +1,6 @@
 # SDS2 - DS Delivery
 
-DS Delivery é uma aplicação construída durante a 2ª edição da Semana Spring React organizada pela DevSuperior.
+[DS Delivery](https://sds2-dsdelivery-ana.netlify.app/) é uma aplicação construída durante a 2ª edição da Semana Spring React organizada pela DevSuperior.
 
 A aplicação consiste em um delivery de comida, os pedidos são realizados na aplicação web e depois via app mobile o entregador poderá acompanhar os pedidos e confirmar a entrega.
 
