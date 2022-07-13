@@ -1,16 +1,29 @@
-# SDS6 - DSMovie
+<p align="center">
+  <a href="https://dsmovie-anabalves.netlify.app/">
+    <img src="./.github/logo.svg" height="150" width="175" alt="Logo da DSMovie" />
+  </a>
+</p>
 
-[DSMovie](https://sds6-dsmovies-ana.netlify.app/) é uma aplicação construída durante a 6ª edição da Semana Spring React organizada pela DevSuperior.
+<h1 align="center">DSMovie</h1>
 
-A aplicação consiste em um catalogo com avaliação de filmes/séries.
+# 📖 Sobre
+
+[DSMovie](https://dsmovie-anabalves.netlify.app/) é uma aplicação construída durante a Semana Spring React organizada pela DevSuperior.
+
+A aplicação consiste em um catálogo de filmes/séries com avaliações dos usuários.
+
+Durante o desenvolvimento foi criada uma API com três métodos:
+
+- GET ​/movies: retorna todos os filmes;
+- GET /movies/{id}: retorna um filme por id;
+- PUT ​/scores: atualizar a pontuação de um filme;
+
 
 <p align="center">
   <img alt="Demonstração web" src="./.github/web.gif">
 </p>
 
----
-
-## 🚀 Tecnologias e Ferramentas
+# 🚀 Tecnologias e Ferramentas
 
 Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
@@ -26,66 +39,77 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 - PostgreSQL
 - Postman
 - Visual Studio Code
-- Eclipse
-- Spring Tool Suite
+- IntelliJ IDEA
 - Git
 
----
-
-### Modelo Conceitual
+# 🎲 Modelo Conceitual
 
 <p align="center">
-  <img alt="Modelo Conceitual" src="./.github/sds6-mc.png" width="1000px">
+  <img alt="Modelo Conceitual" src="./.github/mc.png" width="1000px">
 </p>
 
----
+# Layouts
 
-### Layout Web
+## 📱 Layout Mobile
+
+<p align="center">
+  <img alt="Layout Mobile" src="./.github/layout-mobile-1.png">
+  <img alt="Layout Mobile" src="./.github/layout-mobile-2.png">
+  <img alt="Layout Mobile" src="./.github/layout-mobile-3.png">
+</p>
+
+## 💻 Layout Web
 
 <p align="center">
   <img alt="Layout Web" src="./.github/layout-web-1.png">
   <img alt="Layout Web" src="./.github/layout-web-2.png">
 </p>
 
----
-
-### Backend
+# Backend
 
 <p align="center">
   <img alt="Requisições API Via Postman" src="./.github/postman.gif">
 </p>
 
-[Get All movies](https://sds6-anabalves.herokuapp.com/movies)
+[Swagger](https://dsmovie-anabalves.herokuapp.com/swagger-ui/)
 
-``` 
- Parâmetros:
+# Como executar o projeto
 
- page -> Passa para a consulta o número da página a ser navegada
- size -> Passa para a consulta o seu respectivo tamanho (quantidade de registros)
- sort -> Indica qual dos campos da entidade vão ser utilizados como referência para ordenação 
- ```
+## Backend
+Pré-requisitos: Java 11
 
- Exemplos:
- [{{host}}/movies?page=0](https://sds6-anabalves.herokuapp.com/movies?page=0)
- [{{host}}/movies?size=10](https://sds6-anabalves.herokuapp.com/movies?size=10)
- [{{host}}/movies?sort=score,desc](https://sds6-anabalves.herokuapp.com/movies?sort=score,desc)
- [{{host}}/movies?page=0&size=10](https://sds6-anabalves.herokuapp.com/movies?page=0&size=10)
- [{{host}}/movies?size=10&sort=score,desc](https://sds6-anabalves.herokuapp.com/movies?size=10&sort=score,desc)
- [{{host}}/movies?page=0&size=10&sort=score,desc](https://sds6-anabalves.herokuapp.com/movies?page=0&size=10&sort=score,desc)
+```bash
+# clonar repositório
+git clone https://github.com/anabalves/full-stack-projects
 
-``` 
- Vale ressaltar um detalhe importante é que a primeira pagina começa do zero não do 1
- ```
+# entrar na pasta do projeto dsmovie
+cd dsmovie
 
-[Get Movie By Id](https://sds6-anabalves.herokuapp.com/movies/1)
-``` 
- {{host}}/movies/{id}
- ```
+# entrar na pasta do projeto backend
+cd backend
 
-[Put Score](https://sds6-anabalves.herokuapp.com/scores)
+# executar o projeto
+./mvnw spring-boot:run
+```
 
-> A extensão [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related?hl=pt-BR) proporciona uma experiência mais agradável para visualizar os dados
+## Frontend
+Pré-requisitos: npm / yarn
 
----
+```bash
+# clonar repositório
+git clone https://github.com/anabalves/full-stack-projects
+
+# entrar na pasta do projeto dsmovie
+cd dsmovie
+
+# entrar na pasta do projeto frontend
+cd frontend
+
+# instalar dependências
+yarn install
+
+# executar o projeto
+npm start
+```
 
 Feito por Ana Beatriz com ensinamentos da escola DevSuperior!
