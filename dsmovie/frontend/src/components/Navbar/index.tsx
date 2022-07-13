@@ -14,11 +14,7 @@ function Navbar() {
               <span className="ds-movie-nav-logo-text">DSMovie</span>
             </Link>
           </div>
-          <a
-            href="https://github.com/anabalves"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/anabalves" target="_blank" rel="noreferrer">
             <div className="dsmovie-contact-container">
               <GithubIcon />
               <p className="dsmovie-contact-link">/anabalves</p>
