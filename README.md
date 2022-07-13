@@ -16,7 +16,7 @@ A aplicação consiste em uma consulta de vendas, no qual podemos buscar vendas 
 Durante o desenvolvimento foi criada uma API com 2 métodos:
 
 - GET ​/sales: retorna todos as vendas;
-- GET /{id}/notification: envia uma notificação via SMS com os Dados dos Melhores Vendedores;
+- GET ​/sales/{id}/notification: envia uma notificação via SMS com os Dados dos Melhores Vendedores;
 
 
 <p align="center">
