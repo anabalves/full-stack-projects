@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://dsmovie-anabalves.netlify.app/">
-    <img src="./.github/logo.svg" height="150" width="175" alt="Logo da DSMovie" />
+    <img src="./.github/logo.svg" height="150" width="175" alt="Logo da DSMovie"/>
   </a>
 </p>
 
