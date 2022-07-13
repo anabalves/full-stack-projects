@@ -11,12 +11,12 @@
 
 [DSMeta](https://dsmeta-anabalves.netlify.app/) é uma aplicação construída durante a Semana Spring React organizada pela DevSuperior.
 
-A aplicação consiste em uma consulta de vendas, no qual podemos buscar vendas em um dado intervalo de datas, e notificar via SMS os dados dos melhores vendedores.
+A aplicação consiste em uma consulta de vendas, no qual podemos buscar vendas em um dado intervalo de datas, e Enviar Notificação via SMS com os Dados dos Melhores Vendedores.
 
 Durante o desenvolvimento foi criada uma API com 2 métodos:
 
 - GET ​/sales: retorna todos as vendas;
-- GET /{id}/notification: envia uma notificação via SMS;
+- GET /{id}/notification: envia uma notificação via SMS com os Dados dos Melhores Vendedores;
 
 
 <p align="center">
