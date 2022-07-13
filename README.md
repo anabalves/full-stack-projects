@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://dsmeta-anabalves.netlify.app/">
     <img src="./.github/logo.svg" height="150" alt="Logo da DSMeta"/>
@@ -18,7 +17,6 @@ Durante o desenvolvimento foi criada uma API com 2 métodos:
 - GET ​/sales: retorna todos as vendas;
 - GET ​/sales/{id}/notification: envia uma notificação via SMS com os Dados dos Melhores Vendedores;
 
-
 <p align="center">
   <img alt="Demonstração web" src="./.github/web.gif">
   <img alt="Demonstração mobile" src="./.github/mobile.gif">
@@ -32,6 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 - Spring Boot
 - JPA / Hibernate
 - Maven
+- Swagger
 - HTML / CSS / JavaScript / TypeScript
 - ReactJS
 - Vite
@@ -55,13 +54,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 ## 📱 Layout Mobile
 
 <p align="center">
-  <img alt="Layout Mobile" src="./.github/layout-mobile.png">
+  <img alt="Layout Mobile" src="./.github/layout-mobile-1.png">
+  <br>
+  <img alt="Layout Mobile" src="./.github/layout-mobile-2.png">
 </p>
 
 ## 💻 Layout Web
 
 <p align="center">
-  <img alt="Layout Web" src="./.github/layout-web.png">
+  <img alt="Layout Web" src="./.github/layout-web-1.png">
+  <img alt="Layout Web" src="./.github/layout-web-2.png">
 </p>
 
 # Backend
@@ -75,6 +77,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 # Como executar o projeto
 
 ## Backend
+
 Pré-requisitos: Java 11
 
 ```bash
@@ -92,6 +95,7 @@ cd backend
 ```
 
 ## Frontend
+
 Pré-requisitos: npm / yarn
 
 ```bash
