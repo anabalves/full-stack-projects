@@ -47,7 +47,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 # 🎲 Modelo Conceitual
 
 <p align="center">
-  <img alt="Modelo Conceitual" src="./.github/mc.png" width="1000px">
+  <img alt="Modelo Conceitual" src="./.github/mc.png" width="430px">
 </p>
 
 # Layouts
