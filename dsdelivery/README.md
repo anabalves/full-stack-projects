@@ -8,7 +8,7 @@
 
 # 📖 Sobre
 
-[DS Delivery](https://dsdelivery-anabalves.netlify.app/) é uma aplicação construída durante a 2ª edição da Semana Spring React organizada pela DevSuperior.
+[DS Delivery](https://dsdelivery-anabalves.netlify.app/) é uma aplicação construída durante a Semana Spring React organizada pela DevSuperior.
 
 A aplicação consiste em um delivery de comida, os pedidos são realizados na aplicação web e depois via app mobile o entregador poderá acompanhar os pedidos e confirmar a entrega.
 
@@ -38,20 +38,20 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 - HTML / CSS / JavaScript / TypeScript
 - ReactJS
 - React Native
+- Apex Charts
 - Expo
 - Heroku
 - Netlify
 - PostgreSQL
 - Postman
 - Visual Studio Code
-- Eclipse
-- Spring Tool Suite
+- IntelliJ IDEA
 - Git
 
 # 🎲 Modelo Conceitual
 
 <p align="center">
-  <img alt="Modelo Conceitual" src="./.github/sds2-mc.png" width="1000px">
+  <img alt="Modelo Conceitual" src="./.github/mc.png" width="1000px">
 </p>
 
 # Layouts

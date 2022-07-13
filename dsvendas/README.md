@@ -1,13 +1,30 @@
-# SDS3 - DSVendas
+<p align="center">
+  <a href="https://dsvendas-anabalves.netlify.app/">
+    <img src="./.github/logo.svg" height="150" width="175" alt="Logo da DS Vendas" />
+  </a>
+</p>
 
-O projeto [DSVendas](https://sds3-dsvendas-ana.netlify.app/) consiste em exibir uma Dashboard de vendas a partir de dados fornecidos pelo backend.
+<h1 align="center">DSVendas</h1>
 
-![Desktop](./.github/desktop.gif)
-![Mobile](./.github/mobile.gif)
+# 📖 Sobre
 
----
+[DSVendas](https://dsvendas-anabalves.netlify.app/) é uma aplicação construída durante a Semana Spring React organizada pela DevSuperior.
 
-## 🚀 Tecnologias e Ferramentas
+A aplicação consiste em exibir uma Dashboard contendo informações sobre as vendas realizadas por um time de vendedores. Essas informações são obtidas a partir de dados fornecidos por um Backend construído com Spring Boot.
+
+Durante o desenvolvimento foi criada uma API com quatros métodos:
+
+- GET /sellers: retorna todos os vendedores;
+- GET /sales: retorna todos as vendas;
+- GET /sales/amount-by-seller: retorna a soma das vendas por vendedor;
+- GET /sales/success-by-seller: retorna informações de sucesso de vendas agrupados por vendedor.
+
+<p align="center">
+  <img alt="Demonstração web" src="./.github/desktop.gif">
+  <img alt="Demonstração mobile" src="./.github/mobile.gif">
+</p>
+
+# 🚀 Tecnologias e Ferramentas
 
 Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
@@ -15,63 +32,76 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 - Spring Boot
 - JPA / Hibernate
 - Maven
-- HTML
-- CSS
-- Typescript
-- React
-- Bootstrap
+- HTML / CSS / JavaScript / TypeScript
+- ReactJS
+- Apex Charts
 - Heroku
 - Netlify
 - PostgreSQL
 - Postman
 - Visual Studio Code
-- Eclipse
-- Spring Tool Suite
+- IntelliJ IDEA
 - Git
 
----
+# 🎲 Modelo Conceitual
 
-### Modelo Conceitual
-![Modelo Conceitual](./.github/sds3-mc.png)
+<p align="center">
+  <img alt="Modelo Conceitual" src="./.github/mc.png" width="1000px">
+</p>
 
-### Padrão camadas adotado
-![Modelo Conceitual](./.github/camadas.png)
+# Padrão camadas adotado
+<p align="center">
+  <img alt="Camadas Projeto" src="./.github/camadas.png" width="1000px">
+</p>
 
-### Frontend
+# 📱 Layout
 
-![Layout Home](./.github/dsvendas-home.png)
-![Layout Dashboard](./.github/dsvendas-dashboard.png)
+<p align="center">
+  <img alt="Layout Web" src="./.github/dsvendas-home.png">
+  <img alt="Layout Web" src="./.github/dsvendas-dashboard.png">
+</p>
 
-### Backend
+# Backend
 
-[All sellers](https://sds3-anabalves.herokuapp.com/sellers)
+[Swagger](https://dsvendas-anabalves.herokuapp.com/swagger-ui/)
 
-[Sales pagination](https://sds3-anabalves.herokuapp.com/sales?page=0&size=20&sort=date,desc)
-``` 
- Parâmetros:
+# Como executar o projeto
 
- page -> Passa para a consulta o número da página a ser navegada
- size -> Passa para a consulta o seu respectivo tamanho (quantidade de registros)
- sort -> Indica qual dos campos da entidade vão ser utilizados como referência para ordenação 
+## Backend
+Pré-requisitos: Java 11
 
- Exemplos:
- {{host}}/sales?page=1
- {{host}}/sales?size=10
- {{host}}/sales?sort=date
- {{host}}/sales?page=1&size=10
- {{host}}/sales?size=10&sort=date
+```bash
+# clonar repositório
+git clone https://github.com/anabalves/full-stack-projects
 
- Vale ressaltar um detalhe importante é que a primeira pagina começa do zero não do 1
- ```
+# entrar na pasta do projeto dsvendas
+cd dsvendas
 
+# entrar na pasta do projeto backend
+cd backend
 
-[Amount by seller](https://sds3-anabalves.herokuapp.com/sales/amount-by-seller)
+# executar o projeto
+./mvnw spring-boot:run
+```
 
-[Success by seller](https://sds3-anabalves.herokuapp.com/sales/success-by-seller)
+## Frontend
+Pré-requisitos: npm / yarn
 
-> A extensão [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related?hl=pt-BR) proporciona uma experiência mais agradável para visualizar os dados
+```bash
+# clonar repositório
+git clone https://github.com/anabalves/full-stack-projects
 
+# entrar na pasta do projeto dsvendas
+cd dsvendas
 
----
+# entrar na pasta do projeto frontend
+cd frontend
+
+# instalar dependências
+yarn install
+
+# executar o projeto
+npm start
+```
 
 Feito por Ana Beatriz com ensinamentos da escola DevSuperior!

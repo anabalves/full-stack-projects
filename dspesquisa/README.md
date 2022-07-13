@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://dspesquisa-anabalves.netlify.app/">
-    <img src="./.github/logo.svg" height="150" width="175" alt="Logo da DS Delivery" />
+    <img src="./.github/logo.svg" height="150" width="175" alt="Logo da DS Pesquisa" />
   </a>
 </p>
 
@@ -8,7 +8,7 @@
 
 # 📖 Sobre
 
-[Big Game Survey](https://sds1-dspesquisa-ana.netlify.app/) é uma aplicação construída durante a 1ª edição da Semana Spring React organizada pela DevSuperior.
+[Big Game Survey](https://dspesquisa-anabalves.netlify.app/) é uma aplicação construída durante a Semana Spring React organizada pela DevSuperior.
 
 A aplicação consiste em uma pesquisa de preferência de jogos, os dados são coletados via app mobile e depois listados na aplicação web, que possui uma dashboard com gráficos baseados nesses dados.
 
@@ -41,14 +41,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 - PostgreSQL
 - Postman
 - Visual Studio Code
-- Eclipse
-- Spring Tool Suite
+- IntelliJ IDEA
 - Git
 
 # 🎲 Modelo Conceitual
 
 <p align="center">
-  <img alt="Modelo Conceitual" src="./.github/sds1-mc.png" width="1000px">
+  <img alt="Modelo Conceitual" src="./.github/mc.png" width="1000px">
 </p>
 
 # Layouts
