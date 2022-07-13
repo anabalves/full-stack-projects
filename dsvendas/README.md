@@ -1,6 +1,6 @@
 # SDS3 - DSVendas
 
-Esse projeto consiste em exibir uma Dashboard de vendas a partir de dados fornecidos pelo backend.
+O projeto [DSVendas](https://sds3-dsvendas-ana.netlify.app/) consiste em exibir uma Dashboard de vendas a partir de dados fornecidos pelo backend.
 
 ![Desktop](./.github/desktop.gif)
 ![Mobile](./.github/mobile.gif)

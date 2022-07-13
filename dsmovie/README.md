@@ -1,6 +1,6 @@
 # SDS6 - DSMovie
 
-DSMovie é uma aplicação construída durante a 6ª edição da Semana Spring React organizada pela DevSuperior.
+[DSMovie](https://sds6-dsmovies-ana.netlify.app/) é uma aplicação construída durante a 6ª edição da Semana Spring React organizada pela DevSuperior.
 
 A aplicação consiste em um catalogo com avaliação de filmes/séries.
 

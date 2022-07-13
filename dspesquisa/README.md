@@ -1,6 +1,6 @@
 # SDS1 - DSPesquisa - Big Game Survey
 
-Big Game Survey é uma aplicação construída durante a 1ª edição da Semana Spring React organizada pela DevSuperior.
+[Big Game Survey](https://sds1-dspesquisa-ana.netlify.app/) é uma aplicação construída durante a 1ª edição da Semana Spring React organizada pela DevSuperior.
 
 A aplicação consiste em uma pesquisa de preferência de jogos, os dados são coletados via app mobile e depois listados na aplicação web, que possui uma dashboard com gráficos baseados nesses dados.
 

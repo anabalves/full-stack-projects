@@ -27,7 +27,9 @@ A landing page é composta por uma frase de efeito, uma imagem e um botão que l
   <img alt="Demonstração mobile" src="./.github/mobile.gif">
 </p>
 
-# 🚀 Tecnologias e Ferramentas
+---
+
+## 🚀 Tecnologias e Ferramentas
 
 Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
