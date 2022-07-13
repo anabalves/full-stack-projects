@@ -35,6 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 - Spring Boot
 - JPA / Hibernate
 - Maven
+- Swagger
 - HTML / CSS / JavaScript / TypeScript
 - ReactJS
 - React Native
