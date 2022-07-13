@@ -2,6 +2,8 @@ package com.devsuperior.dspesquisa.resources;
 
 import java.time.Instant;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -20,12 +22,14 @@ import com.devsuperior.dspesquisa.services.RecordService;
 
 @RestController
 @RequestMapping(value = "/records")
+@Api(value = "/records", tags = "DSPesquisa API", description = "API Para Realizar Pesquisa sobre Jogos Favoritos")
 public class RecordResource {
 
 	@Autowired
 	private RecordService recordService;
 	
 	@GetMapping
+	@ApiOperation(value = "Fetch all records details", notes = "get all records")
 	public ResponseEntity<Page<RecordDTO>> findAll(
 			@RequestParam(value = "min", defaultValue = "") String min,
 			@RequestParam(value = "max", defaultValue = "") String max,
@@ -48,6 +52,7 @@ public class RecordResource {
 	}
 	
 	@PostMapping
+	@ApiOperation(value = "Create record", notes = "Create new record")
 	public ResponseEntity<RecordDTO> insert(@RequestBody RecordInsertDTO dto) {
 		RecordDTO newDTO = recordService.insert(dto);
 		return ResponseEntity.ok().body(newDTO);

@@ -1,15 +1,29 @@
-# SDS1 - DSPesquisa - Big Game Survey
+<p align="center">
+  <a href="https://dspesquisa-anabalves.netlify.app/">
+    <img src="./.github/logo.svg" height="150" width="175" alt="Logo da DS Delivery" />
+  </a>
+</p>
+
+<h1 align="center">DSPesquisa - Big Game Survey</h1>
+
+# 📖 Sobre
 
 [Big Game Survey](https://sds1-dspesquisa-ana.netlify.app/) é uma aplicação construída durante a 1ª edição da Semana Spring React organizada pela DevSuperior.
 
 A aplicação consiste em uma pesquisa de preferência de jogos, os dados são coletados via app mobile e depois listados na aplicação web, que possui uma dashboard com gráficos baseados nesses dados.
+
+Durante o desenvolvimento foi criada uma API com três métodos:
+
+- GET /games: retorna todos os games disponíveis para votação;
+- GET /records: retorna todos os registros de votação;
+- POST /records: cria um novo voto;
 
 <p align="center">
   <img alt="Demonstração web" src="./.github/web.gif">
   <img alt="Demonstração mobile" src="./.github/mobile.gif">
 </p>
 
-## 🚀 Tecnologias e Ferramentas
+# 🚀 Tecnologias e Ferramentas
 
 Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
@@ -31,15 +45,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 - Spring Tool Suite
 - Git
 
----
-
-### Modelo Conceitual
+# 🎲 Modelo Conceitual
 
 <p align="center">
   <img alt="Modelo Conceitual" src="./.github/sds1-mc.png" width="1000px">
 </p>
 
-### Layout Mobile
+# Layouts
+
+## 📱 Layout Mobile
 
 <p align="center">
   <img alt="Layout Mobile" src="./.github/layout-mobile-1.png">
@@ -47,7 +61,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
   <img alt="Layout Mobile" src="./.github/layout-mobile-3.png">
 </p>
 
-### Layout Web
+## 💻 Layout Web
 
 <p align="center">
   <img alt="Layout Web" src="./.github/layout-web-1.png">
@@ -55,18 +69,74 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
   <img alt="Layout Web" src="./.github/layout-web-3.png">
 </p>
 
-### Backend
+# Backend
 
 <p align="center">
   <img alt="Requisições API Via Postman" src="./.github/postman.gif">
 </p>
 
-[All games](https://sds1-anabalves.herokuapp.com/games)
+[Swagger](https://dspesquisa-anabalves.herokuapp.com/swagger-ui/)
 
-[All records](https://sds1-anabalves.herokuapp.com/records)
+# Como executar o projeto
 
-> A extensão [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related?hl=pt-BR) proporciona uma experiência mais agradável para visualizar os dados
+## Backend
+Pré-requisitos: Java 11
 
----
+```bash
+# clonar repositório
+git clone https://github.com/anabalves/full-stack-projects
+
+# entrar na pasta do projeto dspesquisa
+cd dspesquisa
+
+# entrar na pasta do projeto backend
+cd backend
+
+# executar o projeto
+./mvnw spring-boot:run
+```
+
+## Front web
+Pré-requisitos: npm / yarn
+
+```bash
+# clonar repositório
+git clone https://github.com/anabalves/full-stack-projects
+
+# entrar na pasta do projeto dspesquisa
+cd dspesquisa
+
+# entrar na pasta do projeto front web
+cd front-web
+
+# instalar dependências
+yarn install
+
+# executar o projeto
+npm start
+```
+
+## Front mobile
+Pré-requisitos: npm / yarn
+
+```bash
+# clonar repositório
+git clone https://github.com/anabalves/full-stack-projects
+
+# entrar na pasta do projeto dspesquisa
+cd dspesquisa
+
+# entrar na pasta do projeto front mobile
+cd front-mobile
+
+# instalar dependências
+yarn install
+
+# executar o projeto
+npm start
+
+# abrir a url disponibilizada no console no celular
+```
+
 
 Feito por Ana Beatriz com ensinamentos da escola DevSuperior!
