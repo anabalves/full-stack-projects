@@ -15,7 +15,7 @@ import com.devsuperior.dsvendas.service.SellerService;
 
 @RestController
 @RequestMapping(value = "/sellers")
-@Api(value = "/sellers", tags = "DSVendas API", description = "API Para Realizar Pesquisa sobre Jogos Favoritos")
+@Api(value = "/sellers", tags = "DSVendas API", description = "API Para Acompanhar Vendas")
 public class SellerController {
 	
 	@Autowired

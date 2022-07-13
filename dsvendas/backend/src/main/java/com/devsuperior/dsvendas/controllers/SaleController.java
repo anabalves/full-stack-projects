@@ -19,7 +19,7 @@ import com.devsuperior.dsvendas.service.SaleService;
 
 @RestController
 @RequestMapping(value = "/sales")
-@Api(value = "/sales", tags = "DSVendas API", description = "API Para Realizar Pesquisa sobre Jogos Favoritos")
+@Api(value = "/sales", tags = "DSVendas API", description = "API Para Acompanhar Vendas")
 public class SaleController {
 	
 	@Autowired
